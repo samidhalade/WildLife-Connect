@@ -1,4 +1,11 @@
-Name,State,Latitude,Longitude,Area_sq_km,Established,Flora,Fauna,Description
-Bor Wildlife Sanctuary,Maharashtra,20.732,78.738,138.12,1970,Teak; Bamboo,Tiger; Leopard; Deer,Dry deciduous forest with rich biodiversity.
-Ranganathittu Bird Sanctuary,Karnataka,12.421,76.656,0.67,1940,Riverine Vegetation,Painted Stork; Spoonbill; Crocodile,Famous bird sanctuary on the Kaveri River.
-Periyar Wildlife Sanctuary,Kerala,9.462,77.236,925,1950,Evergreen Forest; Bamboo,Elephant; Tiger; Gaur,Protected forest surrounding Periyar Lake.
+Name,State,Latitude,Longitude,Flora,Fauna,Area (sq km),Established,Description
+Vedanthangal Bird Sanctuary,Tamil Nadu,12.544,79.859,Mangroves & Wetlands,Painted Stork,0.30,1936,India's oldest bird sanctuary.
+Ranganathittu Bird Sanctuary,Karnataka,12.422,76.659,Riverine Forest,Crocodile,0.67,1940,Famous nesting site for migratory birds.
+Bharatpur Bird Sanctuary,Rajasthan,27.159,77.521,Wetlands,Siberian Crane,29.00,1956,UNESCO World Heritage bird sanctuary.
+Wayanad Wildlife Sanctuary,Kerala,11.685,76.132,Teak & Bamboo,Elephant,344.44,1973,Part of the Nilgiri Biosphere Reserve.
+Koyna Wildlife Sanctuary,Maharashtra,17.400,73.750,Semi Evergreen Forest,Leopard,423.55,1985,Located in the Western Ghats.
+Bhadra Wildlife Sanctuary,Karnataka,13.699,75.631,Moist Deciduous Forest,Tiger,490.46,1951,Known for Project Tiger.
+Chinnar Wildlife Sanctuary,Kerala,10.350,77.167,Dry Thorn Forest,Grizzled Giant Squirrel,90.44,1984,Home to many endangered species.
+Dandeli Wildlife Sanctuary,Karnataka,15.266,74.618,Tropical Evergreen Forest,Black Panther,866.41,1956,Known for hornbills and adventure tourism.
+Bhitarkanika Wildlife Sanctuary,Odisha,20.733,86.900,Mangrove Forest,Saltwater Crocodile,672.00,1975,Famous for crocodile conservation.
+Nal Sarovar Bird Sanctuary,Gujarat,22.800,72.050,Wetlands,Flamingo,120.82,1969,One of India's largest bird sanctuaries.

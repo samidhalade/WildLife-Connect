@@ -1,7 +1,10 @@
 import streamlit as st
+import pandas as pd
 
 def show():
 
     st.title("Wildlife Sanctuaries")
 
-    st.write("Sanctuary Map")
+    data = pd.read_csv("data/sanctuaries.csv")
+
+    st.dataframe(data)
