@@ -66,13 +66,13 @@ with top_left:
         st.metric("Sanctuaries", total_sanctuaries)
 
     with c3:
-        st.metric("National Parks", total_parks)
+        st.metric("Conservations", total_parks)
 
 with top_right:
 
     search = st.text_input(
         "Search",
-        placeholder="Search Sanctuary or National Park"
+        placeholder="Search Sanctuary or Conservations"
     )
 
     results = filtered_places
@@ -191,7 +191,7 @@ with left_panel:
         st.session_state.page = "Sanctuaries"
 
     if st.button(
-        "National Parks",
+        "Conservations",
         use_container_width=True
     ):
         st.session_state.page = "Conservations"
@@ -355,7 +355,7 @@ with centre_panel:
 
     elif st.session_state.page == "Conservations":
 
-        st.subheader("National Parks")
+        st.subheader("Conservations")
 
         park_map = folium.Map(
             location=[22.5, 79.0],
