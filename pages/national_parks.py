@@ -4,23 +4,23 @@ import folium
 from streamlit_folium import st_folium
 
 st.set_page_config(
-    page_title="Wildlife Sanctuaries",
+    page_title="National Parks",
     layout="wide"
 )
 
-sanctuaries = pd.read_csv("data/sanctuaries.csv")
+national_parks = pd.read_csv("data/national_parks.csv")
 
-st.title("Wildlife Sanctuaries of India")
+st.title("National Parks of India")
 
 st.write(
-    "Explore India's famous Wildlife Sanctuaries through an interactive map."
+    "Explore India's famous National Parks through an interactive map."
 )
 
 st.divider()
 
 search = st.text_input(
-    "Search Sanctuary",
-    placeholder="Search by sanctuary name..."
+    "Search National Park",
+    placeholder="Search by park name..."
 )
 
 latitude = 22.5
@@ -31,8 +31,8 @@ searched_name = None
 
 if search:
 
-    result = sanctuaries[
-        sanctuaries["Name"].str.contains(
+    result = national_parks[
+        national_parks["Name"].str.contains(
             search,
             case=False,
             na=False
@@ -47,14 +47,14 @@ if search:
         longitude = result.iloc[0]["Longitude"]
         zoom = 9
 
-india_map = folium.Map(
+park_map = folium.Map(
     location=[latitude, longitude],
     zoom_start=zoom
 )
 
-for _, row in sanctuaries.iterrows():
+for _, row in national_parks.iterrows():
 
-    colour = "darkgreen"
+    colour = "lightgreen"
     radius = 7
 
     if searched_name == row["Name"]:
@@ -99,24 +99,24 @@ for _, row in sanctuaries.iterrows():
 
         popup=popup
 
-    ).add_to(india_map)
+    ).add_to(park_map)
 
 st_folium(
-    india_map,
+    park_map,
     width=1100,
     height=650
 )
 
 st.divider()
 
-st.header("Wildlife Sanctuaries")
+st.header("National Parks")
 
-display_data = sanctuaries
+display_data = national_parks
 
 if search and searched_name is not None:
 
-    display_data = sanctuaries[
-        sanctuaries["Name"].str.contains(
+    display_data = national_parks[
+        national_parks["Name"].str.contains(
             search,
             case=False,
             na=False
@@ -127,21 +127,19 @@ for index, row in display_data.iterrows():
 
     with st.container():
 
-        col1, col2 = st.columns([1,3])
+        col1, col2 = st.columns([1, 3])
 
         with col1:
 
-            image_path = f"images/sanctuaries/{row['Image']}"
+            image_path = f"images/national_parks/{row['Image']}"
 
             try:
-
                 st.image(
                     image_path,
                     use_container_width=True
                 )
 
             except Exception:
-
                 st.warning("Image not available.")
 
         with col2:
@@ -162,7 +160,7 @@ for index, row in display_data.iterrows():
 
             if st.button(
                 "View Details",
-                key=f"sanctuary_{index}"
+                key=f"park_{index}"
             ):
 
                 st.session_state.selected_place = row["Name"]

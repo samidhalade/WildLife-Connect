@@ -1,54 +1,142 @@
 import streamlit as st
 
-def show():
+st.set_page_config(
+    page_title="About",
+    layout="wide"
+)
 
-    st.title("About WildLife Connect")
-    st.subheader("Learn more about our Project")
+st.title("About WildLife Connect")
 
-    st.divider()
+st.markdown("---")
 
-    left, right = st.columns([3,1])
+st.header("Project Overview")
 
-    with left:
-        with st.container(border=True):
-            st.header("About WildLife Connect")
+st.write("""
+WildLife Connect is an interactive web dashboard developed to
+bring together information about India's Wildlife Sanctuaries
+and National Parks into one platform.
 
-            st.write("""
-            WildLife Connect is an interactive web-based dashboard that brings together information about India's Wildlife Sanctuaries and Conservations on a single platform.
+The dashboard allows users to explore protected areas through
+interactive maps, search locations, filter wildlife reserves,
+and learn about their biodiversity.
+""")
 
-            The dashboard allows users to explore protected area through an interactive map, search for spectic locations, apply filters, and learn about the flora and fauna naturally found in each region. By coming all essential information into one place, the platform provides an easy and organised way to explore India's rich wildlife heritage.
-            """)
+st.markdown("---")
 
-    st.write("")
+st.header("Project Objectives")
 
-    left, right = st.columns([1,3])
+st.write("""
+• Create a centralized platform for protected areas.
 
-    with right:
-        with st.container(border=True):
+• Help users explore India's biodiversity.
 
-            st.header("Our Objective")
+• Provide wildlife information in an interactive manner.
 
-            st.write("""
-            The objective of WildLife Connect is to provide a centralized and interactive platform for exploring India's WildLife Sanctuaries and Conservations.
+• Assist users in planning wildlife trips.
 
-            The dashboard aims to simplify access to wildlife information, encourage awareness about biodiversity, and help students, researchers, wildlife enthusiasts and travellers discover protected area through maps, search functionality and intelligent filtering.
-            """)
+• Promote wildlife conservation awareness.
+""")
 
-    st.write("")
+st.markdown("---")
 
-    left, right = st.columns([3,1])
+st.header("Features")
 
-    with left:
-        with st.container(border=True):
+st.write("""
+Interactive Maps
 
-            st.header("Dashboard Features")
+Wildlife Sanctuary Map
 
-            st.write("• Interactive map showing all Wildlife Sancturies and Conservations in one place.")
-            st.write("• Two different shades of green to clearly differentiate Wildlife sanctuaries and conservation.")
-            st.write("• Separate map views for wildlife sanctuaries, conservations and combined view.")
-            st.write("• Search functionality to directly locate any protected area.")
-            st.write("• Filter options to explore protected area based on state, flora and fauna.")
-            st.write("• Clicking on any location displays detailed information about that protected area.")
-            st.write("• Clean and simple dashboard interface designed for easy navigation.")
-            st.write("• Centralized information instead of requiring users to visit multiple websites.")
-            st.write("• Easily expandable in the future by adding more protected areas and additional information.")
+National Park Map
+
+Search Locations
+
+Filter by State
+
+Flora & Fauna Information
+
+Wildlife Explorer
+
+Trip Planner
+
+Place Details
+
+SQLite Database
+""")
+
+st.markdown("---")
+
+st.header("Technologies Used")
+
+col1, col2 = st.columns(2)
+
+with col1:
+
+    st.subheader("Frontend")
+
+    st.write("""
+• Streamlit
+
+• HTML
+
+• CSS
+
+• Folium
+""")
+
+with col2:
+
+    st.subheader("Backend")
+
+    st.write("""
+• Python
+
+• Pandas
+
+• SQLite
+
+• Streamlit
+""")
+
+st.markdown("---")
+
+st.header("Future Enhancements")
+
+st.write("""
+• Live weather information
+
+• Nearby hotels
+
+• Travel routes
+
+• Entry fees
+
+• Wildlife gallery
+
+• Animal identification
+
+• AI Trip Planner
+
+• Wildlife recommendation system
+""")
+
+st.markdown("---")
+
+st.header("Developer")
+
+st.write("""
+**Samidha Lade**
+
+B.Tech Computer Science Engineering
+
+SRM Institute of Science and Technology
+
+WildLife Connect was developed as an interactive dashboard
+to make information about India's protected areas easily
+accessible and visually engaging.
+""")
+
+st.markdown("---")
+
+st.success(
+    "Thank you for exploring WildLife Connect!"
+)
