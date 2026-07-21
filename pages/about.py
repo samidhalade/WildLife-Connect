@@ -121,22 +121,8 @@ st.write("""
 
 st.markdown("---")
 
-st.header("Developer")
-
 st.write("""
-**Samidha Lade**
-
-B.Tech Computer Science Engineering
-
-SRM Institute of Science and Technology
-
 WildLife Connect was developed as an interactive dashboard
 to make information about India's protected areas easily
 accessible and visually engaging.
 """)
-
-st.markdown("---")
-
-st.success(
-    "Thank you for exploring WildLife Connect!"
-)

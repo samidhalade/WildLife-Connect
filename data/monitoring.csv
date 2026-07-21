@@ -1,0 +1,21 @@
+Place,Type,Boundary Status,Animals Near Boundary,Boundary Crossings Today,Last Alert,Human Intrusions Today,Drone Patrols
+Jim Corbett National Park,National Park,Safe,2,0,No Alerts,0,5
+Kaziranga National Park,National Park,Warning,5,1,Elephant near East Boundary,0,6
+Ranthambore National Park,National Park,Safe,1,0,No Alerts,1,4
+Sundarbans National Park,National Park,Critical,3,2,Tiger crossed South Boundary,2,7
+Bandhavgarh National Park,National Park,Safe,0,0,No Alerts,0,5
+Kanha National Park,National Park,Warning,4,1,Deer near Boundary,0,5
+Periyar National Park,National Park,Safe,1,0,No Alerts,0,4
+Gir National Park,National Park,Warning,2,1,Lion near Boundary,1,6
+Bandipur National Park,National Park,Safe,0,0,No Alerts,0,4
+Hemis National Park,National Park,Safe,0,0,No Alerts,0,3
+Vedanthangal Bird Sanctuary,Sanctuary,Safe,0,0,No Alerts,0,3
+Ranganathittu Bird Sanctuary,Sanctuary,Safe,0,0,No Alerts,0,3
+Bharatpur Bird Sanctuary,Sanctuary,Warning,2,0,Birds near Buffer Zone,0,4
+Wayanad Wildlife Sanctuary,Sanctuary,Safe,1,0,No Alerts,0,4
+Koyna Wildlife Sanctuary,Sanctuary,Safe,0,0,No Alerts,0,3
+Bhadra Wildlife Sanctuary,Sanctuary,Warning,3,1,Elephant near Boundary,0,5
+Chinnar Wildlife Sanctuary,Sanctuary,Safe,0,0,No Alerts,0,3
+Dandeli Wildlife Sanctuary,Sanctuary,Safe,1,0,No Alerts,1,4
+Bhitarkanika Wildlife Sanctuary,Sanctuary,Critical,2,1,Crocodile outside Buffer Zone,0,5
+Nal Sarovar Bird Sanctuary,Sanctuary,Safe,0,0,No Alerts,0,3

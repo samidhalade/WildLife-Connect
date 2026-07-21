@@ -8,10 +8,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# -----------------------------
-# LOAD DATA
-# -----------------------------
-
 sanctuaries = pd.read_csv("data/sanctuaries.csv")
 national_parks = pd.read_csv("data/national_parks.csv")
 
@@ -23,10 +19,6 @@ all_places = pd.concat(
     ignore_index=True
 )
 
-# -----------------------------
-# PAGE TITLE
-# -----------------------------
-
 st.title("Explore Protected Areas")
 
 st.write(
@@ -35,19 +27,10 @@ st.write(
 
 st.divider()
 
-# -----------------------------
-# SEARCH BAR
-# -----------------------------
-
 search = st.text_input(
     "Search",
     placeholder="Search Sanctuary or National Park"
 )
-
-# -----------------------------
-# FILTERS
-# -----------------------------
-
 c1, c2, c3 = st.columns(3)
 
 with c1:
@@ -93,10 +76,6 @@ if fauna != "All":
         )
     ]
 
-# -----------------------------
-# SEARCH
-# -----------------------------
-
 results = filtered.copy()
 
 if search:
@@ -108,10 +87,6 @@ if search:
             na=False
         )
     ]
-
-# -----------------------------
-# MAP POSITION
-# -----------------------------
 
 latitude = 22.5
 longitude = 79
@@ -127,10 +102,6 @@ india_map = folium.Map(
     location=[latitude, longitude],
     zoom_start=zoom
 )
-
-# -----------------------------
-# MARKERS
-# -----------------------------
 
 for _, row in filtered.iterrows():
 
@@ -191,10 +162,6 @@ for _, row in filtered.iterrows():
 
     ).add_to(india_map)
 
-# -----------------------------
-# DISPLAY MAP
-# -----------------------------
-
 st_folium(
     india_map,
     width=1200,
@@ -235,10 +202,6 @@ for index, row in filtered.iterrows():
     st.divider()
 
 st.divider()
-
-# -----------------------------
-# RESULTS TABLE
-# -----------------------------
 
 st.subheader("Protected Areas")
 
